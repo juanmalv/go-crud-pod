@@ -20,6 +20,13 @@ Supported requests:
 
 Request Body:
 
+Income has fields for
+ - amount
+ - reason
+ - date
+ - category
+ 
+
 > {
 > "amount" : 23
 > }
