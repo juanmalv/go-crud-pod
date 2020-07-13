@@ -1,9 +1,11 @@
 package main
 
-import "github.com/juanmalv/go-crud-pod/cmd/webservice/routes"
+import (
+	"github.com/juanmalv/go-crud-pod/cmd/webservice/routes"
+)
 
 func main() {
-	var ginRouter routes.GinRouter
+	apiRouter := routes.GetRouter(routes.GinRouting)
 
-	ginRouter.Run()
+	apiRouter.Run()
 }
